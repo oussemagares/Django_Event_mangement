@@ -1,0 +1,123 @@
+{% load static %}
+
+<aside class="main-sidebar sidebar-dark-primary elevation-4" style="    background-color: #8f9898;
+">
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link">
+      <span class="brand-text font-weight-light"> <img src="https://app.eventizer.io/assets/images/eventizer.png"  style="    width: 70%;
+        margin-left: 26px;"  alt=""></span>
+    </a>
+
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+                 with font-awesome or any other icon font library -->
+            <li class="nav-item">
+              <a href="{% url 'dashboard' %}" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>
+                  Home
+                </p>
+              </a>
+            </li>
+          </ul>
+           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              <li class="nav-item has-treeview menu-open">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-folder"></i>
+                  <p>
+                    Event Category
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{% url 'create-event-category' %}" class="nav-link">
+                      <i class="far fa fa-edit nav-icon"></i>
+                      <p>Create Category</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{% url 'event-category-list' %}" class="nav-link">
+                      <i class="far fa fa-list nav-icon"></i>
+                      <p>Category List</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+           </ul>
+           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              <li class="nav-item has-treeview menu-open">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-calendar"></i>
+                  <p>
+                    Events
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{% url 'event-create' %}" class="nav-link">
+                      <i class="far fa fa-edit nav-icon"></i>
+                      <p>Create Event</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{% url 'event-list' %}" class="nav-link">
+                      <i class="far fa fa-list nav-icon"></i>
+                      <p>Event List</p>
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+          </ul>
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <li class="nav-item has-treeviaw menu-open">
+              <a href="#" class="nav-link">
+                  <i class="fas fa-user"></i>
+                  <p>
+                      User Management
+                      <i class="right fas fa-angle-left"></i>
+                  </p>
+              </a>
+
+                <li class="nav-item">
+                    <a href="{% url 'add-event-member' %}" class="nav-link">
+                      <i class="far fa fa-edit nav-icon"></i>
+                      <p>Add Event Member</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{% url 'join-event-list' %}" class="nav-link">
+                    <i class="far fa fa-list nav-icon"></i>
+                    <p>Join Event List</p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="{% url 'absense-user' %}" class="nav-link">
+                    <i class="far fa fa-list nav-icon"></i>
+                    <p>Absense User</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{% url 'complete-event-user' %}" class="nav-link">
+                    <i class="far fa fa-list nav-icon"></i>
+                    <p>Complete Event User</p>
+                  </a>
+                </li>
+
+            </li>
+          </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
